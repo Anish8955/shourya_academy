@@ -22,6 +22,7 @@ if (isset($_GET['sno'])) {
     $userData = $user-> getUserDetails($sno); // Assuming a method to retrieve user details
 
     if($_SERVER['REQUEST_METHOD']=='POST'){
+      $id = $_POST["id"];
       $sno = $_POST["sno"];
       $batch_no = $_POST["batch_no"];
       $roll_no = $_POST["roll_no"];
@@ -33,7 +34,13 @@ if (isset($_GET['sno'])) {
       $place_of_issue =  $_POST["place_of_issue"];
       $training_from =  $_POST["training_from"];
       $training_to =  $_POST["training_to"];
-    
+
+      if ($user->update_certificate($id, $sno, $batch_no, $roll_no, $full_name, $parents_name , $resident_of, $date_of_issue, $designation, $place_of_issue, $training_from, $training_to)) {
+        header('Location: list-certificate.php');
+      } else {
+          echo  'Failed to Update certificate.';
+      }
+
     }
     // Now you can populate an edit form with the user's data or perform editing actions
     // Example:
@@ -201,6 +208,7 @@ if (isset($_GET['sno'])) {
                     </div>
                     <div class="card-body">
                       <form method="post">
+                        <input type="hidden" value="<?php echo $userData['id'] ?>" name="id">
                         <div class="row">
                           <div class="col-md-6 col-xl-6">
 

@@ -108,5 +108,37 @@ class UserController {
             return null;
         }
     }
+    public function update_certificate($id, $sno, $batch_no, $roll_no, $full_name, $parents_name, $resident_of, $date_of_issue, $designation, $place_of_issue, $training_from, $training_to) {
+        try {
+            $query = 'UPDATE add_certificate SET sno = :sno, batch_no = :batch_no, roll_no = :roll_no, full_name = :full_name, parents_name = :parents_name, resident_of = :resident_of, date_of_issue = :date_of_issue, designation = :designation, place_of_issue = :place_of_issue, training_from = :training_from, training_to = :training_to WHERE id = :id';
+            $stmt = $this->db->prepare($query);
+            $stmt->bindParam(':id', $id);
+            $stmt->bindParam(':sno', $sno);
+            $stmt->bindParam(':batch_no', $batch_no);
+            $stmt->bindParam(':roll_no', $roll_no);
+            $stmt->bindParam(':full_name', $full_name);
+            $stmt->bindParam(':parents_name', $parents_name);
+            $stmt->bindParam(':resident_of', $resident_of);
+            $stmt->bindParam(':date_of_issue', $date_of_issue);
+            $stmt->bindParam(':designation', $designation);
+            $stmt->bindParam(':place_of_issue', $place_of_issue);
+            $stmt->bindParam(':training_from', $training_from);
+            $stmt->bindParam(':training_to', $training_to);
+            $stmt->execute();
+    
+            // Check if the update was successful
+            $rowCount = $stmt->rowCount();
+            if ($rowCount > 0) {
+                // Update successful
+                return true;
+            } else {
+                // No rows were affected (possibly the ID doesn't exist)
+                return false;
+            }
+        } catch (PDOException $e) {
+            echo 'Error updating certificate details: ' . $e->getMessage();
+            return false;
+        }
+    }    
 }
 ?>

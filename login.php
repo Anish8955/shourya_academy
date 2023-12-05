@@ -28,7 +28,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
   <meta name="viewport"
     content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
 
-  <title>Shourya Academy |Login</title>
+  <title>Shourya Academy |Login Page</title>
 
   <meta name="description" content="" />
 
