@@ -47,7 +47,7 @@ if (isset($_GET['sno'])) {
     if ($userData) {
       
         // Display your edit form or perform edit actions here using $userData
-        echo "Editing user with ID: " . $sno;
+    
     } else {
         echo "User not found.";
     }

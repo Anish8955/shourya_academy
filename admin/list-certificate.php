@@ -201,8 +201,9 @@ $userData = $userController->getAllUsers(); // Assuming you have a method to fet
                               <a class="dropdown-item" href="delete_user.php?sno=<?php echo $user['sno']; ?>">
                                 <i class="bx bx-trash me-1"></i> Delete
                               </a>
-                              <a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-file me-1"></i> Generate
-                                PDF</a>
+                              <a class="dropdown-item" href="pdf.php?sno=<?php echo $user['sno']; ?>">
+                                <i class="bx bx-trash me-1"></i> Generate PDF
+                              </a>
                                 <a class="dropdown-item" href="all_details.php?sno=<?php echo $user['sno']; ?>">
                                 <i class="bx bx-trash me-1"></i> All Details
                               </a>
