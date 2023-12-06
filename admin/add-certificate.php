@@ -194,62 +194,62 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
                   <div class="card mb-4">
                     <div class="card-header d-flex justify-content-between align-items-center">
                       <h5 class="mb-0">Add Details</h5>
-                    </div>
+                    </div> required
                     <div class="card-body">
                       <form method="post">
                         <div class="row">
                           <div class="col-md-6 col-xl-6">
                             <div class="mb-3">
                               <label class="form-label" for="basic-default-S.No.">Serial No.</label>
-                              <input type="text" class="form-control" id="basic-default-S.No." placeholder="Serial No." name="sno" />
+                              <input type="text" class="form-control" id="basic-default-S.No." placeholder="Serial No." required name="sno" />
                             </div>
                             <div class="mb-3">
                               <label class="form-label" for="basic-default-License No.">License No.</label>
-                              <input type="text" class="form-control" id="basic-default-License No." placeholder="License No." value="TRG.NO.-11" />
+                              <input type="text" class="form-control" id="basic-default-License No." placeholder="License No." required value="TRG.NO.-11" />
                             </div>
                             <div class="mb-3">
                               <label class="form-label" for="basic-default-Full Name">Full Name</label>
-                              <input type="text" class="form-control" id="basic-default-Full Name" placeholder="Full Name" name="full_name"/>
+                              <input type="text" class="form-control" id="basic-default-Full Name" placeholder="Full Name" required name="full_name"/>
                             </div>
                             <div class="mb-3">
                               <label class="form-label" for="basic-default-Resident Of">Resident Of</label>
-                              <input type="text" class="form-control" id="basic-default-Resident Of" placeholder="Resident Of" name="resident_of" />
+                              <input type="text" class="form-control" id="basic-default-Resident Of" placeholder="Resident Of" required name="resident_of" />
                             </div>
                             <div class="mb-3">
                               <label class="form-label" for="basic-default-Designation">Designation</label>
-                              <input type="text" class="form-control" id="basic-default-Designation" placeholder="Designation" name="designation" />
+                              <input type="text" class="form-control" id="basic-default-Designation" placeholder="Designation"  requiredname="designation" />
                             </div>
                             <div class="mb-3">
                               <label class="form-label" for="basic-default-Complete Training From">Complete Training From</label>
-                              <input type="date" class="form-control" id="basic-default-Complete Training From" placeholder="Complete Training From" name="training_from" />
+                              <input type="date" class="form-control" id="basic-default-Complete Training From" placeholder="Complete Training From"  requiredname="training_from" />
                             </div>
                            
                           </div>
                           <div class="col-md-6 col-xl-6">
                           <div class="mb-3">
                               <label class="form-label" for="basic-default-Roll No.">Roll No.</label>
-                              <input type="text" class="form-control" id="basic-default-Roll No." placeholder="Roll No." name="roll_no" />
+                              <input type="text" class="form-control" id="basic-default-Roll No." placeholder="Roll No." required name="roll_no" />
                             </div>
                           <div class="mb-3">
                             <label class="form-label" for="basic-default-Batch No.">Batch No.</label>
-                            <input type="text" class="form-control" id="basic-default-Batch No." placeholder="Batch No." name="batch_no" />
+                            <input type="text" class="form-control" id="basic-default-Batch No." placeholder="Batch No." required name="batch_no" />
                           </div>
                           <div class="mb-3">
                               <label class="form-label" for="basic-default-Parents Name">Parents Name</label>
-                              <input type="text" class="form-control" id="basic-default-Parents Name" placeholder="Parents Name" name="parents_name" />
+                              <input type="text" class="form-control" id="basic-default-Parents Name" placeholder="Parents Name"  requiredname="parents_name" />
                             </div>
                             <div class="mb-3">
                               <label class="form-label" for="basic-default-Date Of Issue">Date Of Issue</label>
-                              <input type="date" class="form-control" id="basic-default-Date Of Issue" placeholder="Date Of Issue" name="date_of_issue" />
+                              <input type="date" class="form-control" id="basic-default-Date Of Issue" placeholder="Date Of Issue" required name="date_of_issue" />
                             </div>
                             <div class="mb-3">
                               <label class="form-label" for="basic-default-Place Of Issue">Place Of Issue</label>
-                              <input type="text" class="form-control" id="basic-default-Place Of Issue" placeholder="Place Of Issue" name="place_of_issue" />
+                              <input type="text" class="form-control" id="basic-default-Place Of Issue" placeholder="Place Of Issue" required name="place_of_issue" />
                             </div>
                           
                             <div class="mb-3">
                               <label class="form-label" for="basic-default-To">To</label>
-                              <input type="date" class="form-control" id="basic-default-To" placeholder="To" name="training_to"/>
+                              <input type="date" class="form-control" id="basic-default-To" placeholder="To" required name="training_to"/>
                             </div>
                           </div>
                         </div>
@@ -274,10 +274,10 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
                     document.write(new Date().getFullYear());
                   </script>
                   , made with ❤️ by
-                  <a href="https://themeselection.com" target="_blank" class="footer-link fw-medium">ThemeSelection</a>
+                  <a href="https://themeselection.com" target="_blank" class="footer-link fw-medium">Tanveer and team</a>
                 </div>
                 <div class="d-none d-lg-inline-block">
-                  <a href="https://themeselection.com/license/" class="footer-link me-4" target="_blank">License</a>
+                 
                   <a href="https://themeselection.com/" target="_blank" class="footer-link me-4">More Themes</a>
 
                   <a

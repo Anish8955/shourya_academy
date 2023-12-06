@@ -33,7 +33,7 @@ $currentPage = 'dashboard'
   <link rel="stylesheet" href="../public/assets/vendor/fonts/boxicons.css" />
 
   <!-- Core CSS -->
-  <link rel="stylesheet" href="../public/assets/vendor/css/core.css" class="template-customizer-core-css" />/public
+  <link rel="stylesheet" href="../public/assets/vendor/css/core.css" class="template-customizer-core-css" />
   <link rel="stylesheet" href="../public/assets/vendor/css/theme-default.css" class="template-customizer-theme-css" />
   <link rel="stylesheet" href="../public/assets/css/demo.css" />
 
@@ -141,7 +141,7 @@ $currentPage = 'dashboard'
                   <div class="d-flex align-items-end row">
                     <div class="col-sm-7">
                       <div class="card-body">
-                        <h5 class="card-title text-primary">Congratulations John! 🎉</h5>
+                        <h5 class="card-title text-primary">Congratulations Anish! 🎉</h5>
                         <p class="mb-4">
                           You have done <span class="fw-medium">72%</span> more sales today. Check your new badge in
                           your profile.
@@ -617,11 +617,11 @@ $currentPage = 'dashboard'
                   document.write(new Date().getFullYear());
                 </script>
                 , made with ❤️ by
-                <a href="https://themeselection.com" target="_blank" class="footer-link fw-medium">ThemeSelection</a>
+                <a href="https://themeselection.com" target="_blank" class="footer-link fw-medium">Tanveer and team</a>
               </div>
               <div class="d-none d-lg-inline-block">
                 <a href="https://themeselection.com/license/" class="footer-link me-4" target="_blank">License</a>
-                <a href="https://themeselection.com/" target="_blank" class="footer-link me-4">More Themes</a>
+              
 
                 <a href="https://demos.themeselection.com/sneat-bootstrap-html-admin-template/documentation/"
                   target="_blank" class="footer-link me-4">Documentation</a>

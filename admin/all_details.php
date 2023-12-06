@@ -329,7 +329,7 @@ if (isset($_GET['sno'])) {
                                 </script>
                                 , made with ❤️ by
                                 <a href="https://themeselection.com" target="_blank"
-                                    class="footer-link fw-medium">ThemeSelection</a>
+                                    class="footer-link fw-medium">Tanveer and team</a>
                             </div>
                             <div class="d-none d-lg-inline-block">
                                 <a href="https://themeselection.com/license/" class="footer-link me-4"

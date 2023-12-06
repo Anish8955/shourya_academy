@@ -117,7 +117,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     </g>
                   </svg>
                 </span>
-                <span class="app-brand-text demo text-body fw-bold">Sneat</span>
+                <span class="app-brand-text demo text-body fw-bold">Shourya Academy</span>
               </a>
             </div>
             <!-- /Logo -->
